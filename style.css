@@ -20,6 +20,12 @@ button{
   border: none;
 }
 
+.center{
+  text-align: center;
+}
+
+
+
 /* Header Section */
 header {
   background-color: rgb(34, 162, 194);
@@ -50,8 +56,8 @@ header li {
 }
 
 header li:hover {
-    transform: scale(1.2);
-    /* background-color: rgb(140, 187, 199); */
+    border-bottom: 1px solid white;
+
 }
 
 nav {
