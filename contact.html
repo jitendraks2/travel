@@ -42,13 +42,50 @@
       <section id="contact">
 
         <h2>Contact Us</h2>
-        <form>      
-            <input name="name" type="text" class="feedback-input" placeholder="Name" />   
-            <input name="email" type="text" class="feedback-input" placeholder="Email" />
-            <input name="email" type="number" class="feedback-input" placeholder="Phone Number" />
-            <textarea name="text" class="feedback-input" placeholder="Query"></textarea>
-            <input type="submit" value="SUBMIT"/>
-          </form>
+        <form
+      name="contactform"
+      onsubmit="return form()"
+    >
+      <input
+        name="Name"
+        type="text"
+        class="feedback-input"
+        placeholder="Name"
+        required
+      />
+      <input
+        name="Email"
+        type="text"
+        class="feedback-input"
+        placeholder="Email"
+     
+      />
+      <input
+        name="mobilenumber"
+        type="number"
+        class="feedback-input"
+        placeholder="Phone Number"
+      />
+
+      <select
+        type="text"
+        value=""
+        name="Destination"
+        class="feedback-input"
+        placeholder="Phone Number"
+        required
+      >
+        <option>Select Your Desired Destination</option>
+        <option>Best Of Kashmir</option>
+        <option>Forts and Palaces of Rajasthan</option>
+      </select>
+      <textarea
+        name="text"
+        class="feedback-input"
+        placeholder="Query"
+      ></textarea>
+      <input type="submit" value="SUBMIT" />
+    </form>
       </section>
 
       <footer>
