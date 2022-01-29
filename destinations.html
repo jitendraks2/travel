@@ -28,22 +28,255 @@
       <nav>
         <ul>
           <a href="/index.html"><li>Home</li> </a>
-          <a href="destinations.html" target="_blank"><li>Destinations</li></a>
-          <a href="#" target="_blank"><li>Packages</li></a>
+          <a href="./destinations.html" "><li>Destinations</li></a>
+          <a href="./gallery.html" "><li>Gallery</li></a>
         </ul>
       </nav>
       <button class="inquire">
-        <a href="contact.html">Inquire Now</a>
+        <a href="./contact.html">Inquire Now</a>
       </button>
     </header>
 
-
-    <main>
+    <main id="destination">
       <h2 class="center">Get Full Tour Details</h2>
-      <select name="" id="">
-        <option value="Rajasthan">Rajasthan</option>
-      </select>
+      <div class="selector">
+        <select
+          name=""
+          id="selectDestination"
+          class="feedback-input destination"
+        >
+          <option value="Select">Select Your Destination</option>
+          <option value="Rajasthan">Rajasthan</option>
+          <option value="Kashmir">Kashmir</option>
+        </select>
+        <button class="btn" onclick="destination()">Get Details</button>
+      </div>
     </main>
+
+    <section class="hidden" id="rajasthan">
+      <h1 class="center d-title">Best Of Rajasthan</h1>
+
+      <div class="info-wrapper">
+        <div class="d-left">
+          <div class="d-price-card">
+            <h3>
+              <i class="fa-solid fa-indian-rupee-sign"></i> 29,599/- (Onwards
+              per person)
+            </h3>
+            <h3><i class="fa-solid fa-calendar-days"></i> 10D/9N</h3>
+            <h3><i class="fa-solid fa-plane-departure"></i>Departure: 6pm</h3>
+            <h3>
+              <i class="fa-solid fa-location-dot"></i>
+
+              Location Covered:
+            </h3>
+            <p>
+              Brahma Temple At Pushkar, Dargah Ajmer, Bikaner, Jaisalmer,
+              Jodhpur, Udaipur, Mount Abu, Jaipur
+            </p>
+
+            <button id="d-order">Book Now</button>
+          </div>
+        </div>
+
+        <div class="d-right">
+          <h2 class="centerr">Day Wise Details</h2>
+          <br />
+          <h3>Day 1: Arrival Delhi - Jaipur</h3>
+          <br />
+          <p>
+            Arrive New Delhi airport / railway station and proceed for the Pink
+            City of Jaipur (265 km /5 hrs). En route visit the Amber Fort and
+            enjoy an elephant ride. Upon arrival at Jaipur, transfer to hotel.
+            The evening is free to explore the attractive colourful market of
+            Jaipur.
+          </p>
+          <br />
+          <h3>Day 2: Jaipur - Ajmer - Pushkar</h3>
+          <br />
+          <p>
+            Post breakfast, visit City Palace, Albert Hall, Hawa Mahal, Jantar
+            Mantar. Later, proceed to Ajmer ( 135 km /3 hrs). Visit the famous
+            Dargah of Salim Chisti and then drive to Pushkar (11 km). Here,
+            visit the only Brahma Temple in India and the Pushkar Lake.
+          </p>
+          <br />
+          <h3>Day 3: Pushkar - Udaipur</h3>
+          <br />
+          <p>
+            In the morning drive to Udaipur (286 km/6 hrs). It was the capital
+            of Sawai Dynasty. Upon arrival, check into the hotel. Later, visit
+            the famous Jagdish temple which enshrines a black stone image of
+            Lord Vishnu/ Jagannath - Lord of the universe, City Palace and the
+            Saheliyon ki bari Gardens of the Maidens, on the bank of Pichori
+            Lake. Night Stay
+          </p>
+          <br />
+          <h3>Day 4: Udaipur</h3>
+          <br />
+          <p>
+            After breakfast, visit the famous Jagdish temple, which enshrines a
+            black stone image of Lord Vishnu as Jagannath-Lord of the universe,
+            City Palace, museum and the Saheliyon ki bari - "Gardens of the
+            Maidens".
+          </p>
+          <br />
+
+          <h3>Day 5: Udaipur - Mount Abu</h3>
+          <br />
+
+          <p>
+            In the morning drive to Mount Abu (190 km/ 4.5 hrs), the only hill
+            station in Rajasthan at an altitude of 1,220 m crowning the highest
+            peak of the Aravali hills. Upon arrival, check into hotel. Later,
+            visit the magnificent Dilwara Jain Temple built in 11th century,
+            Sunset point and Nakki Lake.
+          </p>
+          <br />
+
+          <h3>Day 6: Mount Abu - Jodhpur</h3>
+          <br />
+          <p>
+            After breakfast, depart to Jodhpur (325 km/7 hrs) which is the
+            second largest city in Rajasthan. Visit Mehrangarh Fort, Umaid
+            Bhawan Palace Museum.
+          </p>
+          <br />
+
+          <br />
+          <h3>Day 7: Jodhpur - Jaisalmer</h3>
+          <br />
+          <p>
+            In the morning drive towards Jaisalmer (285 km/7 hrs).Upon arrival,
+            check-in hotel. The evening is at leisure.
+          </p>
+          <br />
+
+          <br />
+          <h3>Day 8: Jaisalmer</h3>
+          <br />
+          <p>
+            In the morning visit Jaisalmer Fort, the only fort in India which
+            has a population of thousand people living within its walls. Later,
+            visit the countless havelis spread across Jaisalmer which are
+            reputed as the city's real show pieces. In the evening visit the
+            sand dunes to witness a spectacular sunset over the dunes.
+          </p>
+          <br />
+
+          <br />
+          <h3>Day 9: Jaisalmer - Bikaner</h3>
+          <br />
+          <p>
+            Early morning proceed to Bikaner ( 332 km/7 hrs). Upon arrival,
+            transfer to hotel. Later, visit the unusual Junagarh Fort. Unlike
+            all the major forts of Rajasthan, which are on hilltops, the
+            Junagarh fort was built on the desert plains itself. Lastly, visit
+            the National Research Centre on Camel.
+          </p>
+          <br />
+
+          <br />
+          <h3>Day 10: Bikaner-Delhi</h3>
+          <br />
+          <p>
+            In the morning drive to Delhi (475 km/9 hrs), transfer to
+            airport/railway station for your onward journey.
+          </p>
+          <br />
+        </div>
+      </div>
+    </section>
+
+    <section class="hidden" id="kashmir">
+      <h1 class="center d-title">Best Of Kashmir</h1>
+
+      <div class="info-wrapper">
+        <div class="d-left">
+          <div class="d-price-card">
+            <h3>
+              <i class="fa-solid fa-indian-rupee-sign"></i> 24,799/- (Onwards
+              per person)
+            </h3>
+            <h3><i class="fa-solid fa-calendar-days"></i> 8D/7N</h3>
+            <h3><i class="fa-solid fa-plane-departure"></i>Departure: 3pm</h3>
+            <h3>
+              <i class="fa-solid fa-location-dot"></i>
+
+              Location Covered:
+            </h3>
+            <p>
+              Pahalgam, Vaishno Devi, Gulmarg, Amritsar, Srinagar, Kurukshetra 
+            </p>
+
+            <button id="d-order">Book Now</button>
+          </div>
+        </div>
+
+        <div class="d-right">
+          <h2 class="centerr">Day Wise Details</h2>
+          <br />
+          <h3>Day 1: Delhi - Katra</h3>
+          <br />
+          <p>
+            Departure to Katra (650 kms./ 15-16 hrs.) Night Journey. 
+          </p>
+          <br />
+          <h3>Day 2: Katra - Vaishno Devi - Katra</h3>
+          <br />
+          <p>
+            Arrival at Katra and check into Hotel. After fresh ups and breakfast, proceed to Vaishno Devi Temple (14 kms. one way) by walk / pony / Helicopter Service and return back to Katra. 
+          </p>
+          <br />
+          <h3>Day 3: Katra - Srinagar</h3>
+          <br />
+          <p>
+            Early morning departure to Srinagar (275 kms. / 10 hrs.). Enroute enjoy Kashmir Valley View. Arrival at Srinagar in the evening at 21:00 Hrs. 
+          </p>
+          <br />
+          <h3>Day 4: Srinagar</h3>
+          <br />
+          <p>
+            After breakfast, visit Sri Shankaracharya Temple, Shalimar Gardens, Chasmashahi Gardens, Nishat Bagh Gardens and take a Shikara boat ride on the Dal lake, covering Nehru Park and Char Chinar. 
+          </p>
+          <br />
+
+          <h3>Day 5:Srinagar - Gulmarg - Srinagar</h3>
+          <br />
+
+          <p>
+            Morning proceed to Gulmarg (58 kms. / 2 hrs.). Visit Golf Course and experience the longest cable car ride up to Khilanmarg Snow Point. Later drive back to Srinagar at 16:00 Hrs. 
+          </p>
+          <br />
+
+          <h3>Day 6: Srinagar - Pahalgam - Jammu</h3>
+          <br />
+          <p>
+            After breakfast, proceed to Pahalgam (97 kms. / 2.5 hrs.), the valley of Shepherds, enroute visit Avantipur ruins and view saffron fields. Later proceed to Katra (280 kms./ 7.5 hrs.)/Jammu. 
+          </p>
+          <br />
+
+          <br />
+          <h3>Day 7: Jammu - Amritsar</h3>
+          <br />
+          <p>
+            Post breakfast proceed to Amritsar (270 kms./ 7 hrs.). Visit Golden Temple, Jalianwala Bagh and leave for Indo-Pak Wagha Border (32 kms.) and back to Hotel. Overnight stay. 
+          </p>
+          <br />
+
+          <br />
+          <h3>Day 8: Amritsar - Delhi (Via) Kurukshetra</h3>
+          <br />
+          <p>
+            Departure to Delhi(475Kms/10Hrs). Enroute visit Kurukshetra Reach Delhi around 21.00 hrs. 
+          </p>
+          <br />
+
+        </div>
+      </div>
+    </section>
+
+ 
 
     <footer>
       <div class="know-more">
@@ -80,5 +313,7 @@
         ></a>
       </div>
     </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>
