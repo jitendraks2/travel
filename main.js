@@ -33,6 +33,9 @@ function form() {
 
 let kashmir = document.getElementById("kashmir");
 let rajasthan = document.getElementById("rajasthan");
+
+let nepal = document.getElementById("nepal");
+let northeast = document.getElementById("northeast");
 let selectedOption;
 function destination() {
   selectedOption = document.getElementById("selectDestination").value;
@@ -40,18 +43,32 @@ function destination() {
   if (selectedOption == "Rajasthan") {
     rajasthan.classList.remove("hidden");
     kashmir.classList.add("hidden");
-
+    nepal.classList.add("hidden");
+    northeast.classList.add("hidden");
   } 
-  
   else if (selectedOption == "Kashmir") {
     kashmir.classList.remove("hidden");
     rajasthan.classList.add("hidden");
-
+    nepal.classList.add("hidden");
+    northeast.classList.add("hidden");
   }
-
-  else{
+   else if (selectedOption == "Nepal") {
+    nepal.classList.remove("hidden");
+    northeast.classList.add("hidden");
+    kashmir.classList.add("hidden");
+    rajasthan.classList.add("hidden");
+  } 
+  else if (selectedOption == "North East") {
+    northeast.classList.remove("hidden");
+    nepal.classList.add("hidden");
+    kashmir.classList.add("hidden");
+    rajasthan.classList.add("hidden");
+  } 
+  else {
     rajasthan.classList.add("hidden");
     kashmir.classList.add("hidden");
+    nepal.classList.add("hidden");
+    northeast.classList.add("hidden");
 
   }
 }
